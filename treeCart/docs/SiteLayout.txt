@@ -1,0 +1,50 @@
+Site layout
+-------------
+Expressed as :controller/:action notation:-
+
+/home
+
+/product/index
+	/view
+	/delete
+	/comment
+		/add
+		/update
+		/delete
+	/favorites/add
+
+/cart/view
+	/checkout
+
+
+/usercp/index
+	/update
+	/favorites/index
+		/delete
+
+/userreg/index
+
+/login/index - handles form processing and auth processing
+
+/logout/index - destroys current auth instance
+
+/error/noroute - handles all 404s
+      /failure - handles 'Site error' messages
+      /privileges - handles 'You are not privileged...' messages
+
+/admin - a cms to handle all site management
+	/product
+		/add
+			/uploadphoto (ver II?)
+		/update
+			/uploadphoto (ver II?)
+	/category
+		/add
+			/uploadphoto (ver II?)
+		/update
+			/uploadphoto (ver II?)
+
+
+
+Version II:
+/searchresults/index
