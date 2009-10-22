@@ -1,0 +1,63 @@
+question:  how to integrate with facebook?
+answer: facebook is the live network.  people will be sharing cabins with each other.  build a realestate gallery boasting a user's list of properties.  price is involved as well as work in trade, and the terms therein.  if you become my friend you gain access to my network of properties, which also includes hell.
+
+no reviews, only comments ... we assume any one commenting is asing a question, or asserting a good time had.
+
+
+footer:
+ - best viewed w/ firefox x.x.x (add logo img)
+
+
+homepage:
+ - list hot properties
+ - world map, select state, etc
+ - add my rental
+
+detail:
+ - report this property
+ - add to favorites
+ - link to this property
+ - write review (limited HTML)
+
+search results:
+ - by keyword, amenities, etc
+
+
+user cp:
+property admin
+ - sel, upd, del, add
+ - property details: location, for sale, type (cabin, yurt, camping, house, apartment), nearby amenities, cost (per night, week, month), availability (calendar feature?), amenities (sheets, washer/dryer, free electric/water/heat, fireplace/wood, refrig, cooking utinsils, garage parking, swimming pool, gym, isolation chamber, etc)
+ - favorites list
+
+
+
+upload photo (up to 6)
+ - select/create thumbnail
+
+
+authentication:
+ - new user reg, accept Registration Terms & Rules, thankyou page, activation email
+ - user cp, admin auth
+ - review, comment auth
+ - report this property
+ 
+
+admin:
+ - delete property (from property detail)
+ - hot property (from prop detail)
+ - error reporting (if using zend shared library, the code could update, but I'll always be on the latest and greatest)
+ - expire ads after 3 months - send 3 month conf email like no-ip.org
+
+howitworks:
+ - page about free hosting, how we get paid, how to use service, what's in it for them
+
+
+Version II:
+ - Recent Reviews homepage Portlet
+ - Facebook integration
+ - Xml bulk import
+
+
+add svn remotely to http://code.google.com/p/radiator-vr/
+
+frbo.com
