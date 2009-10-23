@@ -1,3 +1,0 @@
-_prefixToPaths has two items:  CMS_View_Helper and Zend_view_helper
-
-how did they both get in there?
