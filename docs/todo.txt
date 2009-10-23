@@ -1,0 +1,41 @@
+
+footer:
+ - best viewed w/ firefox x.x.x (add logo img)
+
+
+homepage:
+ - list categories, hot products module
+
+product detail:
+ - add to favorites
+
+search results:
+ - by keyword, title
+
+user cp:
+account admin
+ - favorites list
+
+
+authentication:
+ - new user reg, accept Registration Terms & Rules, thankyou page, activation email
+ - user cp, admin auth
+
+
+admin:
+ - crud product
+ - hot product 
+ - error reporting (if using zend shared library, the code could update, always be on the latest and greatest)
+
+ - upload photo (up to 6)
+   - select/create thumbnail
+
+howitworks:
+ - page about free hosting, how we get paid, how to use service, what's in it for them
+
+
+Version II:
+ - Xml, cvs bulk import
+ - users interested in this product are also interested in ...
+ - review, comment auth
+ - Facebook integration??

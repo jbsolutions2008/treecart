@@ -1,0 +1,113 @@
+=====================
+SVN 
+=====================
+ - install tortoiseSVN
+
+=====================
+PHP config
+=====================
+- add/upd include_path variable to include the zend framework (hosting services won't do this? then copy the files in the path below to the C:\wamp\www\zenddemo\library directory)
+	include_path = ".;C:\wamp\www\ZendFramework-1.9.3PL1-minimal\library\Zend"
+- add xdebug vars (zend debugger not currently working w/ wamp php5.3) 
+- make sure C:\wamp\bin\php\php5.3.0; is in environment path
+
+
+- enable settings
+	file uploads
+	enable dl
+
+
+- TODO: add list of enabled extentions
+	php_pdo_mysql
+	etc ...
+
+=====================
+Apache config
+=====================
+- add zenddemo.com to hosts file
+- add a vhost section to end of httpd.conf file ...
+<VirtualHost 127.0.0.1>
+   DocumentRoot C:\wamp\www\zenddemo
+   ServerName www.zenddemo.com
+</VirtualHost>
+
+- extention enable
+	mod_rewrite
+
+=====================
+PEAR
+=====================
+(used for phpUnit, possibly in future for zend and doctrine)
+http://pear.php.net/manual/en/installation.php
+
+
+=====================
+Zend Framework
+=====================
+- Create a project
+	C:\wamp\www\ZendFramework-1.9.3PL1-minimal\bin\zf.bat create project zenddemo
+
+
+http://akrabat.com/zend-framework-tutorial/
+=====================
+Doctrine
+=====================
+- install doctrine libraries from .gz file
+- see C:\wamp\www\doctrine_test\test.php
+
+=====================
+PHP Unit
+=====================
+pear channel-discover pear.phpunit.de
+pear install phpunit/PHPUnit
+pear version phpunit/PHPUnit
+
+phpunit C:\wamp\www\vacationrentals\tests\test.php StackTest
+
+=====================
+X Debug
+=====================
+
+Already installed w/ Netbeans, if not follow the directions below
+
+1. Get Xdebug that matches your PHP (the one installed with WAMP ... make sure it's thread safe )
+2. Place XDebug dll in WAMP_path\php\extensions.
+3. Add these lines to the php.ini under C:\wamp\Apache2\bin\php.ini
+
+[XDebug]
+zend_extension="C:\wamp\bin\php\php5.3.0\ext\php_xdebug-2.0.5-5.3-vc6.dll"
+xdebug.remote_enable=on
+xdebug.remote_host=localhost
+xdebug.remote_port=9000
+xdebug.remote_handler=dbgp
+;xdebug.profiler_output_dir="C:\Temp"
+
+
+4. !!even though it's included in the extensions directory, don't add to the extentions area like: extension=php_xdebug-2.0.5-5.3-vc6.dll
+5.  phpinfo() sould inlcude an xdebug section and this text:
+This program makes use of the Zend Scripting Language Engine:
+Zend Engine v2.3.0, Copyright (c) 1998-2009 Zend Technologies
+    with Xdebug v2.0.5, Copyright (c) 2002-2008, by Derick Rethans
+
+7. In Wamp restart all services.
+
+
+=====================
+Netbeans PHP projects
+=====================
+file->new project (points to public directory)
+add zend, doctrine referencesd to global include
+install plugins (tools->plugins->available plugins)
+-ant
+-svn
+
+=====================
+Ant 
+=====================
+Installed with Netbeans (see above)
+
+
+=====================
+Blueprint?? (css framework)
+=====================
+http://blueprintcss.org
