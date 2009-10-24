@@ -7,7 +7,7 @@ defined('APPLICATION_PATH')
 
 // Define application environment
 defined('APPLICATION_ENV')
-    || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : '@ENVIRONMENT@'));
+    || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'development'));
 
 // Ensure library/ is on include_path
 // TODO:  either move doctrine libs to project libs or add the doctrine path to the configs
@@ -17,7 +17,8 @@ set_include_path(implode(PATH_SEPARATOR, array(
     get_include_path(),
 )));
 
-//require_once 'Zend/Loader/Autoloader.php';
+
+require_once 'Zend/Loader/Autoloader.php';
 require_once 'Zend/Application.php';
 
 $application = new Zend_Application(
